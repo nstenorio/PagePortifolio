@@ -6,8 +6,6 @@
     gap: var(--gap);
     min-height: 100vh;
   }
-
-
   
   .intro-text-content, .intro-img {
     display: flex;
