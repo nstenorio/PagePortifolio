@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Tenório - Desenolvedor</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="shortcut icon" href="/assets/img/icon-title.png">
+</head>
+
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home">FT-Dev</a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#about">+ sobre</a></li>
+          <li><a href="#portifolio">portifólio</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="https://www.linkedin.com/in/fernando-ten%C3%B3rio-a5b14b292/" target="_blank"><img src="assets/img/linkedin-logo.png" alt="LinkedIn - Fernando Tenório"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-img">
+        <img src="assets/img/profile-pict.png" alt="Logo de HTML, CSS e JS.">
+      </div>
+      <div class="intro-text-content">
+        <h2>Sou Fernando Tenório</h2>
+        <p>Sou estudante de Análise de Desenvolvimento de Sistemas pela Universidade dos Guararapes em Pernambuco, tenho uma identificação muito forte com tecnologia, então por ter esta ligação com a área, decidi iniciar meus estudos e minha carreira dentro da Tecnologia...</p>
+
+        <p></p>
+
+        <p> </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>skills & ferramentas</h2>
+      <p>Aqui estão algumas skills, ferramentas e linguagens que fazem parte do meu curriculo...</p>
+      <div class="grid">
+        <div class="skills-menu">
+        <h4>linguagens</h4><br>
+        <p>C# .NET<br>JavaScript<br>HTML & CSS<br>Sistemas Embarcados</p>
+        </div>
+        <div class="skills-menu">
+        <h4>skills</h4><br>
+        <p>Desenvolvedor Web<br>Desenvolvedor de Banco de Dados<br>UI Designer</p>
+        </div>
+        <div class="skills-menu">
+        <h4>ferramentas</h4><br>
+        <p>Visual Studio<br>VS Code<br>SQL Server<br>Adobe Photoshop<br>Adobe Illustrator</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Um pouco mais...</h2>
+      <p class="grid-description"></p>
+
+      <div class="grid">
+        <article>
+          <h3></h3><br>
+          <p>Além da ligação com a tecnologia, a influência dos meus irmãos que também são <i>Desenvolvedores</i> ajudou bastante para que eu decidisse trilhar o mesmo caminho...</p>
+        </article>
+        <article>
+          <h3></h3><br>
+          <p>Tenho focado meus estudos também em algumas plataformas digitais como DIO.me e Udemy, atualmente tenho direcionado meus estudos para SQL com SQL Server e Tecnologias Microsoft... </p>
+        </article>
+        <article>
+          <h3></h3><br>
+          <p>Em algumas das minhas experiências profissionais, trabalhei com <i>Suporte Técnico</i> montando infraestruturas de Rede, Telefonia e Segurança e <i>Instrutor</i> nas áreas de Informática e afins...</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="portifolio" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Portifólio</h2>
+      <p class="grid-description">Alguns dos meus recentes trabalhos...</p>
+
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="/assets/img/gallery-landing-page.png" alt="Landing Page para Estudos" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/img/gallery-ftdev-page.png" alt="Meu Site Pessoal" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/img/gallery-agenda-csharp.png" alt="random image from unsplash" />
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content">
+      <div class="intro-text-content">
+        <h2>entre em contato</h2>
+        <p>Para mais informações preencha abaixo o formulário e deixe sua mensagem, responderei em breve...</p>
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contact me</legend>
+
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">last name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Your e-mail">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Send message</button>
+          </div>
+        </fieldset>
+      </div>  
+    </div>
+  </section>
+
+
+  <footer id="footer" class="footer white-bg">
+    <p>Desenvolvido Por Fernando Tenório</p>
+  </footer>
+
+  <a class="back-to-top" href="#">➤</a>
+</body>
+
+</html>
